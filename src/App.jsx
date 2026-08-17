@@ -1561,7 +1561,7 @@ export default function App() {
 
   if (!playerName && !gmMode) {
     return (
-      <div className="pj-root">
+      <div className="pj-root notranslate" translate="no">
         <GlobalStyle />
         <div className="pj-shell pj-gate">
           <div className="pj-title" style={{ marginBottom: 4 }}>Criador de Personagens</div>
@@ -1585,7 +1585,7 @@ export default function App() {
 
   if (gmMode) {
     return (
-      <div className="pj-root">
+      <div className="pj-root notranslate" translate="no">
         <GlobalStyle />
         <div className="pj-shell">
           <GMPanel onExit={() => setGmMode(false)} />
@@ -1595,7 +1595,7 @@ export default function App() {
   }
 
   return (
-    <div className="pj-root">
+    <div className="pj-root notranslate" translate="no">
       <GlobalStyle />
       <div className="pj-shell">
         <div className="pj-header">
